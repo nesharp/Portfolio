@@ -1,71 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="/dependencies/bootstrap-grid.min.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav>
-            <div class="logo"><b>s</b></div>
-            <ul class="navItems">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">skils</a></li>
-                <li><a href="./blog.html">blog</a></li>
-            </ul>
-        </nav>
-        
-        
-        <div class="wrapper">
-            <div class="cols cols0">
-                <span class="topline">Hello</span>
-                <h1>I'm <span class="multiText"></span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem obcaecati voluptatem veniam molestiae alias! Aliquid quae, consectetur rerum nostrum repudiandae esse ullam facilis tempore ad omnis tenetur, quo dolor sint.</p>
-                <div class="btns">
-                    <button>Download SV</button>
-                    <button class="btn-ghost-call">Call back</button>
-                </div>
-            </div>
-            <div class="cols cols1">
-                <img src="" id="splash">
-                <img src="./img/photo.png" class="imgbox" >
+      <nav>
+        <div class="logo"><b>s</b></div>
+        <ul class="navItems">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">skils</a></li>
+          <li><a href="">blog</a></li>
+        </ul>
+      </nav>
 
-            </div>
+      <div class="wrapper">
+        <div class="cols cols0">
+          <span class="topline">Hello</span>
+          <h1>I'm <span class="multiText"></span></h1>
+          <p>
+            Одним із моїх найбільших досягнень є моя кар'єра програміста, в якій
+            я успішно впроваджував інноваційні ідеї та розробляв високоякісні
+            програми.
+          </p>
+          <div class="btns">
+            <a href="./img/cv.png" download><button>Download SV</button></a>
+            <a href="https://github.com/nesharp"><button>GIT Hub</button></a>
+          </div>
         </div>
-        
-        
-    </div>
-    <div class="myModal" id="myModal">
-        <form action="#">
-            <label for="name">Your name:</label>
-            <input type="text" id="name" name="name" required>
-          
-            <label for="phone">Your phone: </label>
-            <input type="tel" id="phone" name="phone" required>
-          
-            <input type="submit" value="Submit">
-            <a class="close-form">Close</a>
-          </form>
-    </div> 
-    <div id="myOverlay">
+        <div class="cols cols1">
+          <img src="" id="splash" />
+          <img src="./img/photo.png" class="imgbox" />
+        </div>
+      </div>
     </div>
 
     <script src="./dependencies/jquery-3.6.4.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script>
-        var typingEffect = new Typed(".multiText",{
-    strings:["coder", "student", "designer"],
-    loop:true,
-    typeSpeed: 100,
-    backSpeed: 80,
-    backDelay: 1500,
-    });
+      var typingEffect = new Typed('.multiText', {
+        strings: ['coder', 'student', 'designer'],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+      });
     </script>
-</body>
+  </body>
 </html>
