@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: popins,sans-serif;
+    font-family: "Montserrat", popins,sans-serif;
 }
 body{
     overflow: hidden;
@@ -61,6 +61,18 @@ b{
     text-decoration: none;
     text-transform: capitalize;
 }
+/* social */
+.social{
+    display: flex;
+    justify-content: right;
+    padding: 0 15%;
+}
+.social img{
+    height: 40px;
+    margin: 20px;
+}
+
+
 /* wrapper */
 .wrapper{
     display: flex;
@@ -101,6 +113,7 @@ h1{
 
 }
 p{
+    font-family: popins, sans-serif;
     display: block;
     width: 90%;
     font-size: 1.2em;
@@ -145,63 +158,6 @@ button:hover{
     top:-100px;
     right: 50px;
 }
-/* form */
-.myModal{
-    position: fixed;
-    left: calc((100% - 400px)/2);
-    top: calc((100vh - 250px)/2);
-    display: none;
-}
-form {
-    background-color: #EFDFFF;
-    padding: 20px;
-    max-width: 400px;
-    /* margin: 0 auto; */
-    
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-    color: #7f00ff;
-  }
-  
-  input[type="text"],
-  input[type="tel"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  input[type="submit"] {
-    background-color: #7f00ff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #4b0082;
-  }
-
-  .close-form {
-    background-color: rgba(243, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
-  }
-  
-  .close-form:hover {
-    background-color: rgba(243, 0, 0,1); 
-  }
-/* end form style */
 
 /* media */
 @media screen and (max-width:1028px){
@@ -236,6 +192,9 @@ form {
     }
     button span{
         display: none !important;
+    }
+    .social{
+        display: none;
     }
 }
 @media  screen and (max-width: 710px) {
